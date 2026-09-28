@@ -16,15 +16,20 @@ h2{font-size:20px;margin:28px 0 12px;display:flex;gap:8px;align-items:center}
 .haken{background:var(--karte);border-left:4px solid var(--gelb);border-radius:8px;padding:4px 16px}
 .haken ul{padding-left:20px}
 .news{background:var(--karte);border:1px solid var(--rand);border-radius:8px;padding:12px 16px;margin-bottom:10px}
+.news.mitbild{display:grid;grid-template-columns:240px 1fr;gap:16px;align-items:start}
+.nbild img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:6px;background:var(--rand)}
+@media (max-width:600px){.news.mitbild{grid-template-columns:1fr}}
 .news h3{margin:0 0 4px;font-size:17px}
 .news p{margin:0 0 4px}
 a{color:var(--cyan)}
 .meta{color:var(--leise);font-size:13px}
 .tag{background:var(--gelb);color:#000;font-size:12px;border-radius:4px;padding:1px 6px;vertical-align:2px}
-.raster{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
-.mod{display:flex;gap:12px;background:var(--karte);border:1px solid var(--rand);border-radius:8px;padding:10px;color:var(--text);text-decoration:none}
+.raster{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.mod{display:flex;flex-direction:column;background:var(--karte);border:1px solid var(--rand);border-radius:8px;overflow:hidden;color:var(--text);text-decoration:none}
 .mod:hover{border-color:var(--gruen)}
-.mod img{width:72px;height:72px;object-fit:cover;border-radius:6px;flex:none;background:var(--rand)}
+.mod img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--rand)}
+.mtext{padding:8px 10px 10px}
+@media (max-width:600px){.raster{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .mod h3{margin:0;font-size:15px;color:var(--cyan)}
 .mod p{margin:2px 0 0}
 .neu{font-size:13px}
@@ -37,131 +42,131 @@ details details>summary{font-size:16px}
 </style></head><body><main>
 <header><h1>Morgen-Briefing</h1><p>Montag, 28.09.2026 · erstellt 07:44 · nur Neues seit der letzten Ausgabe</p></header>
 <section class="haken"><h2>Stream-Aufhänger</h2><ul><li>Massey Ferguson bringt in Beauvais einen rosa Traktor: Welche Maschine im Spiel würdet ihr auch mal in Rosa sehen wollen?</li><li>Bei GIANTS gibt es eine Vorschau auf Kaffeeanbau in Beans &amp; Alpacas: Würdet ihr für eine neue Kultur eine eigene Map anfangen?</li><li>Den Stihl-Akku-Fällkeil gibt es jetzt echt: Wer von euch macht im Spiel Forstwirtschaft, und was fehlt euch da noch?</li></ul></section>
-<section><h2>Landtechnik-News <span class="zahl">6</span></h2><article class="news"><h3><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSzR2TU9vLS1JcjhlajhicHc2SzMtcnFwN3BOQ3kyajVUbkpCUFEwZk8xU3U2bWdPQXhzQ2RNVDZLWHp6b2c0ZEZVV0l3YVBxUWlWM0VzbGdfU1VQWWhYYVZvTGF1SW55dnR4R0F2YXhVb3lkbE1HWW03M2xjSHlXdGlOM251QjRxYnZGX3Z2a09Yend2b0xBbllZdk1nMGpXbS1wT011Y2Q0WUs4SmFMRjlaTW1ZTW45Z3cwcUFTaV9aRFdSV09ueg?oc=5" target="_blank" rel="noopener">Massey Ferguson zeigt im Oktober in Beauvais einen rosa Traktor</a></h3>
-<p>Massey Ferguson präsentiert im Oktober in Beauvais einen einzigartigen rosa Traktor. Ein Sondermodell, das gut zu Lackierungs- und Skin-Ideen im Spiel passt.</p><p class="meta">top agrar · 27.09. 20:00</p></article><article class="news"><h3><a href="https://www.farming-simulator.com/newsArticle.php?lang=de&amp;country=de&amp;news_id=709" target="_blank" rel="noopener">GIANTS-Preview: Kaffeeanbau in Catuaí | Beans &amp; Alpacas</a></h3>
-<p>GIANTS gibt einen Vorgeschmack auf den Kaffeeanbau in der Map Catuaí | Beans &amp; Alpacas. Neue Kultur, neue Map, also Stoff für den Stream.</p><p class="meta">GIANTS Software · 24. September 2026</p></article><article class="news"><h3><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcDRyQllGenRiTTNKMFdSSU9ES2RNaFYwQ0M4M2FmS0dRSXFtdVBzUnR1elV2djRTc2hCaXdlWHFCdmN0NmFqOV9qVjVsc1B5TjF0dEkyZS1JTEJPMDVHajlhSGhTRmZBbDVtbHh6dTFsV1UzUlJHaEZHWS16ZVN0U3dqbGtVX3JOcWFzNFdkdlJfVkYydGFIdzlwNHduVGdfbTd1R1F5SFpQVmpES08zLW9PMkN5ZVN1UUw0Y2VkS1NDVFJFTktaMFF2TXljYVlW?oc=5" target="_blank" rel="noopener">Stihl bringt ersten Akku-Fällkeil</a></h3>
-<p>Stihl stellt seinen ersten Akku-Fällkeil vor, mit dem sich Bäume aus sicherer Entfernung fällen lassen. Interessant für alle, die im Spiel viel mit Forstmaschinen und der Kettensäge arbeiten.</p><p class="meta">bauernzeitung.de · 27.09. 21:44</p></article><article class="news"><h3><a href="https://landwirt-media.com/was-wurde-aus-dem-hydraulik-schnellkuppler-von-thomas-moesl/" target="_blank" rel="noopener">Hydraulik-Schnellkuppler von Thomas Mösl: Was daraus wurde</a></h3>
-<p>Der Erfinder Thomas Mösl hat 2015 die Firma MSW GmbH gegründet, sein System heißt heute Highspeed Oil Coupler. LANDWIRT blickt auf die Entwicklung seit dem ersten Bericht 2014 zurück.</p><p class="meta">LANDWIRT · 28.09. 07:00</p></article><article class="news"><h3><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOR2FLRll5MnllM3N3WWdkRzlPNm5UeE5OVkJTSnRYd0NMVUZVR0tTUXlFd29XdFk0ODdadHVkRUV0eHlNaE4xNTVqdlJvMFhzMVBFZWdpTzZIV3NuOU5ZdzRudjluclI2WVVJQXRrMl9ZNk1pU2I5OTYzY3EzWnl4cDNLS0hYckJ4ZF9xWElKWDVTejJlRVY1TGJBTFF5alFuQ1h4QjRn?oc=5" target="_blank" rel="noopener">Vonier Landtechnik: Hallenneueröffnung und 75 Jahre Firmengeschichte</a></h3>
-<p>Der Landtechnikhändler Vonier feiert 75 Jahre und eröffnet eine neue Halle.</p><p class="meta">dieBildschirmzeitung · 27.09. 08:37</p></article><article class="news"><h3><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQSkY5WmJjejhBT3RrWndDblVTWU11U2lKOVBHQTJRdVVDWlExN21VQ05JWnZuN1hIVEZLX2VfZHNRalJOWHJob0xrSEJTcjgyZ09rZkVtdHB1NEdZZXVrLTZmN3RJbDRwaWduM3hJVVJQdGI1TzFEUC1tbHBKcDZTa1MweHQ1cG1UbTdCOEtOU0FKVmlrMzloQ0FORGxhZU5fQ3N2cVpLQ2hOWUNZXzFhU25B?oc=5" target="_blank" rel="noopener">Sandro Amrhein ist Weltmeister</a></h3>
-<p>Meldung von agrartechnik.ch zu einem Weltmeistertitel von Sandro Amrhein. Die Disziplin steht im Teaser nicht, ist also vor der Erwähnung im Stream zu prüfen.</p><p class="meta">agrartechnik.ch · 28.09. 05:47</p></article></section>
+<section><h2>Landtechnik-News <span class="zahl">6</span></h2><article class="news mitbild"><a class="nbild" href="https://www.topagrar.com/technik/news/massey-ferguson-prasentiert-im-oktober-in-beauvais-einzigartigen-rosa-traktor-20029434.html" target="_blank" rel="noopener"><img src="https://flm.topagrar.com/flm/upload/w_1280,g_Center,q_60/https://www.topagrar.com/imgs/2026-09-25/dsc08181-scaled.jpg" alt="" referrerpolicy="no-referrer"></a><div><h3><a href="https://www.topagrar.com/technik/news/massey-ferguson-prasentiert-im-oktober-in-beauvais-einzigartigen-rosa-traktor-20029434.html" target="_blank" rel="noopener">Massey Ferguson zeigt im Oktober in Beauvais einen rosa Traktor</a></h3>
+<p>Massey Ferguson präsentiert im Oktober in Beauvais einen einzigartigen rosa Traktor. Ein Sondermodell, das gut zu Lackierungs- und Skin-Ideen im Spiel passt.</p><p class="meta">top agrar · 27.09. 20:00</p></div></article><article class="news mitbild"><a class="nbild" href="https://www.farming-simulator.com/newsArticle.php?lang=de&amp;country=de&amp;news_id=709" target="_blank" rel="noopener"><img src="https://www.farming-simulator.com/cms/uploads/news_6aa7cd826ecc3.jpg" alt="" referrerpolicy="no-referrer"></a><div><h3><a href="https://www.farming-simulator.com/newsArticle.php?lang=de&amp;country=de&amp;news_id=709" target="_blank" rel="noopener">GIANTS-Preview: Kaffeeanbau in Catuaí | Beans &amp; Alpacas</a></h3>
+<p>GIANTS gibt einen Vorgeschmack auf den Kaffeeanbau in der Map Catuaí | Beans &amp; Alpacas. Neue Kultur, neue Map, also Stoff für den Stream.</p><p class="meta">GIANTS Software · 24. September 2026</p></div></article><article class="news mitbild"><a class="nbild" href="https://www.bauernzeitung.de/landwirtschaft/landtechnik/stihl-ueberrascht-erstem-akku-faellkeil-baeume-faellen-sicherer-entfernung-1754" target="_blank" rel="noopener"><img src="https://www.bauernzeitung.de/sites/bauernzeitung.de/files/styles/heroteaser_node_lg_2x/public/2026-09/unterreiner-forsttage-24-fe-206-48864246.jpg?itok=UBkplev_" alt="" referrerpolicy="no-referrer"></a><div><h3><a href="https://www.bauernzeitung.de/landwirtschaft/landtechnik/stihl-ueberrascht-erstem-akku-faellkeil-baeume-faellen-sicherer-entfernung-1754" target="_blank" rel="noopener">Stihl bringt ersten Akku-Fällkeil</a></h3>
+<p>Stihl stellt seinen ersten Akku-Fällkeil vor, mit dem sich Bäume aus sicherer Entfernung fällen lassen. Interessant für alle, die im Spiel viel mit Forstmaschinen und der Kettensäge arbeiten.</p><p class="meta">bauernzeitung.de · 27.09. 21:44</p></div></article><article class="news mitbild"><a class="nbild" href="https://landwirt-media.com/was-wurde-aus-dem-hydraulik-schnellkuppler-von-thomas-moesl/" target="_blank" rel="noopener"><img src="https://landwirt-media.com/wp-content/uploads/2026/09/1-10-scaled.jpeg" alt="" referrerpolicy="no-referrer"></a><div><h3><a href="https://landwirt-media.com/was-wurde-aus-dem-hydraulik-schnellkuppler-von-thomas-moesl/" target="_blank" rel="noopener">Hydraulik-Schnellkuppler von Thomas Mösl: Was daraus wurde</a></h3>
+<p>Der Erfinder Thomas Mösl hat 2015 die Firma MSW GmbH gegründet, sein System heißt heute Highspeed Oil Coupler. LANDWIRT blickt auf die Entwicklung seit dem ersten Bericht 2014 zurück.</p><p class="meta">LANDWIRT · 28.09. 07:00</p></div></article><article class="news mitbild"><a class="nbild" href="https://diebildschirmzeitung.de/bad-wurzach/hallenneueroeffnung-und-75-jahre-vonier-landtechnik-248387/" target="_blank" rel="noopener"><img src="https://diebildschirmzeitung.de/wp-content/uploads/2026/09/bild6415-1.jpg" alt="" referrerpolicy="no-referrer"></a><div><h3><a href="https://diebildschirmzeitung.de/bad-wurzach/hallenneueroeffnung-und-75-jahre-vonier-landtechnik-248387/" target="_blank" rel="noopener">Vonier Landtechnik: Hallenneueröffnung und 75 Jahre Firmengeschichte</a></h3>
+<p>Der Landtechnikhändler Vonier feiert 75 Jahre und eröffnet eine neue Halle.</p><p class="meta">dieBildschirmzeitung · 27.09. 08:37</p></div></article><article class="news mitbild"><a class="nbild" href="https://www.agrartechnik.ch/zeitschrift/schweizer-landtechnik/newsticker/artikel/sandro-amrhein-ist-weltmeister/" target="_blank" rel="noopener"><img src="https://www.agrartechnik.ch/fileadmin/_processed_/9/7/csm_Bildschirmfoto_2026-09-28_um_05.46.05_8c94310809.png" alt="" referrerpolicy="no-referrer"></a><div><h3><a href="https://www.agrartechnik.ch/zeitschrift/schweizer-landtechnik/newsticker/artikel/sandro-amrhein-ist-weltmeister/" target="_blank" rel="noopener">Sandro Amrhein ist Weltmeister</a></h3>
+<p>Meldung von agrartechnik.ch zu einem Weltmeistertitel von Sandro Amrhein. Die Disziplin steht im Teaser nicht, ist also vor der Erwähnung im Stream zu prüfen.</p><p class="meta">agrartechnik.ch · 28.09. 05:47</p></div></article></section>
 <section><h2>Neu im ModHub <span class="zahl">12</span></h2><div class="raster"><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=371699&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00371699/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Liebherr T33-10</h3>
+<img src="bilder/371699-1.0.0.0.jpg" alt="">
+<div class="mtext"><h3>Liebherr T33-10</h3>
 <p class="meta">Loaders - Telehandlers · von SBE-Kai</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=376231&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00376231/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Lizard GHM Tipping Trailer Pack</h3>
+<img src="bilder/376231-1.0.0.0.jpg" alt="">
+<div class="mtext"><h3>Lizard GHM Tipping Trailer Pack</h3>
 <p class="meta">Trailers - Trailers · von CALERUEGA modding design</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=369011&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00369011/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>TR 34090/2 PT+</h3>
+<img src="bilder/369011-1.0.0.0.jpg" alt="">
+<div class="mtext"><h3>TR 34090/2 PT+</h3>
 <p class="meta">Trailers - Trailers · von Jirka.T</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=373247&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00373247/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>DALBO POWERCHAIN 800</h3>
+<img src="bilder/373247-1.0.0.0.jpg" alt="">
+<div class="mtext"><h3>DALBO POWERCHAIN 800</h3>
 <p class="meta">Soil Cultivation - Disc Harrows · von Rentner Modding</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=373456&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00373456/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Unia Grudziądz U410-U416</h3>
+<img src="bilder/373456-1.0.0.0.jpg" alt="">
+<div class="mtext"><h3>Unia Grudziądz U410-U416</h3>
 <p class="meta">Soil Cultivation - Cultivators · von PanSimono, Dymitri</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=372742&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00372742/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Greenhouse Modular</h3>
+<img src="bilder/372742-1.0.0.0.jpg" alt="">
+<div class="mtext"><h3>Greenhouse Modular</h3>
 <p class="meta">Package · von Kastor [D-S-Agrarservice]</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=370585&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00370585/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Placeable Power Lines</h3>
+<img src="bilder/370585-1.0.0.0.jpg" alt="">
+<div class="mtext"><h3>Placeable Power Lines</h3>
 <p class="meta">Placeable - Fences · von MA7Studio</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=369887&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00369887/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Small Soup Factory</h3>
+<img src="bilder/369887-1.0.0.0.jpg" alt="">
+<div class="mtext"><h3>Small Soup Factory</h3>
 <p class="meta">Placeable - Production Sites · von morfei1</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=374318&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00374318/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Reverse Cruise Control</h3>
+<img src="bilder/374318-1.0.0.0.jpg" alt="">
+<div class="mtext"><h3>Reverse Cruise Control</h3>
 <p class="meta">Gameplay · von lokras1234</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=374942&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00374942/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>ASPÖCK Europoint III Rear Light</h3>
+<img src="bilder/374942-1.0.0.0.jpg" alt="">
+<div class="mtext"><h3>ASPÖCK Europoint III Rear Light</h3>
 <p class="meta">Prefab Prefab Category Other · von Angelo_smet · Prefab</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=374628&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00374628/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Concrete Tile Fence</h3>
+<img src="bilder/374628-1.0.0.0.jpg" alt="">
+<div class="mtext"><h3>Concrete Tile Fence</h3>
 <p class="meta">Prefab Prefab Category Fence · von MixFarming · Prefab</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=374574&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00374574/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Pack Bus Stop</h3>
+<img src="bilder/374574-1.0.0.0.jpg" alt="">
+<div class="mtext"><h3>Pack Bus Stop</h3>
 <p class="meta">Prefab Prefab Category Building · von PL studio · Prefab</p></div></a></div></section>
 <section><h2>Mod-Updates <span class="zahl">27</span></h2><div class="raster"><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=360230&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00360230/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Genesee County 4km</h3>
+<img src="bilder/360230-1.0.0.4.jpg" alt="">
+<div class="mtext"><h3>Genesee County 4km</h3>
 <p class="meta">North American Maps · von jdunn1019</p><p class="neu">Version 1.0.0.4 · Neue Patches 1.20 und 1.21 eingebaut, Feld 38 und eine Biogasanlage für überschüssige Gülle ergänzt, Wiesengras-Schnitt und mehrere Kleinigkeiten repariert; ein neuer Spielstand ist nötig.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=371320&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00371320/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Metal Garage</h3>
+<img src="bilder/371320-1.0.0.1.jpg" alt="">
+<div class="mtext"><h3>Metal Garage</h3>
 <p class="meta">Placeable - Sheds · von ikas, Kristo</p><p class="neu">Version 1.0.0.1 · Kollisionsfehler am Boden behoben.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=364982&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00364982/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Old Concrete Fence</h3>
+<img src="bilder/364982-2.0.0.0.jpg" alt="">
+<div class="mtext"><h3>Old Concrete Fence</h3>
 <p class="meta">Placeable - Fences · von MixFarming</p><p class="neu">Version 2.0.0.0 · Eine weitere Zaunvariante ist dazugekommen.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=366681&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00366681/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Hoermann Building Pack 4</h3>
+<img src="bilder/366681-1.1.0.0.jpg" alt="">
+<div class="mtext"><h3>Hoermann Building Pack 4</h3>
 <p class="meta">Placeable - Sheds · von MISSYB</p><p class="neu">Version 1.1.0.0 · Probleme beim Erscheinen der Objekte behoben.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=354505&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00354505/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Hoermann Building Pack 2</h3>
+<img src="bilder/354505-2.0.0.0.jpg" alt="">
+<div class="mtext"><h3>Hoermann Building Pack 2</h3>
 <p class="meta">Package · von MISSYB</p><p class="neu">Version 2.0.0.0 · Info-Trigger und Türprobleme repariert, der überdachte Bunker ist wieder da.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=326870&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00326870/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Lizard Multipurpose Sheds</h3>
+<img src="bilder/326870-1.2.1.0.jpg" alt="">
+<div class="mtext"><h3>Lizard Multipurpose Sheds</h3>
 <p class="meta">Placeable - Storages · von MrHector</p><p class="neu">Version 1.2.1.0 · Unterstützung für die Stackable-Pallet-Storage-Erweiterung, Objekt-Trigger sitzt wieder korrekt an der bequemeren Gebäudeseite.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=369653&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00369653/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Feed Silo</h3>
+<img src="bilder/369653-1.0.0.1.jpg" alt="">
+<div class="mtext"><h3>Feed Silo</h3>
 <p class="meta">Placeable - Grain silos · von Kastor [D-S-Agrarservice]</p><p class="neu">Version 1.0.0.1 · Umrechnung von Gras und Heu in den Bunkern repariert, Entladen mit der Schaufel von der Seite funktioniert wieder.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=311513&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00311513/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Demarec DRG-22</h3>
+<img src="bilder/311513-1.0.0.2.jpg" alt="">
+<div class="mtext"><h3>Demarec DRG-22</h3>
 <p class="meta">Forestry - Excavator Tools · von Angelo_smet</p><p class="neu">Version 1.0.0.2 · Wackeliger Drehpunkt behoben, Wassersprühsystem und Schnellkuppler ergänzt, Greifen von Ballen und Texturen verbessert.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=360044&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00360044/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Lizard LogFlex 8XS</h3>
+<img src="bilder/360044-1.0.7.1.jpg" alt="">
+<div class="mtext"><h3>Lizard LogFlex 8XS</h3>
 <p class="meta">Forestry - Forwarders · von Carl-TG</p><p class="neu">Version 1.0.7.1 · Einige Raupenketten, die in die Maschine ragten, sind repariert.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=360502&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00360502/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Fliegl Weight</h3>
+<img src="bilder/360502-1.0.1.0.jpg" alt="">
+<div class="mtext"><h3>Fliegl Weight</h3>
 <p class="meta">Miscellaneous - Weights · von Saargau Modding</p><p class="neu">Version 1.0.1.0 · Farbauswahl ergänzt, ModDesc-Version aktualisiert, Schmutzdarstellung hinzugefügt.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=309827&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00309827/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Madara Agro Dunav RNT Series</h3>
+<img src="bilder/309827-1.0.1.0.jpg" alt="">
+<div class="mtext"><h3>Madara Agro Dunav RNT Series</h3>
 <p class="meta">Trailers - Trailers · von EED123</p><p class="neu">Version 1.0.1.0 · Fahrwerk-Physik und Achsenanimation verbessert, Bremsgeräusche ergänzt.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=310612&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00310612/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Lizard RSD4</h3>
+<img src="bilder/310612-1.0.1.0.jpg" alt="">
+<div class="mtext"><h3>Lizard RSD4</h3>
 <p class="meta">Trailers - Trailers · von EED123</p><p class="neu">Version 1.0.1.0 · Anhänger-Physik und Achsen verbessert, Bremsgeräusche ergänzt.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=360984&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00360984/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>VOLVO FH16 TANDEM</h3>
+<img src="bilder/360984-1.0.0.4.jpg" alt="">
+<div class="mtext"><h3>VOLVO FH16 TANDEM</h3>
 <p class="meta">Drivables - Trucks · von ALXXA</p><p class="neu">Version 1.0.0.4 · Neue Animationen für Türen und Spoiler sowie neue Farbschemata.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=337888&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00337888/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Kuhn VB 2190</h3>
+<img src="bilder/337888-1.0.0.1.jpg" alt="">
+<div class="mtext"><h3>Kuhn VB 2190</h3>
 <p class="meta">Baling - Round Balers · von Puszkap</p><p class="neu">Version 1.0.0.1 · Fehlendes Kabel am Elektroanschluss ergänzt, neue Mod- und Store-Icons.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=338937&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00338937/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>John Deere Series 9000</h3>
+<img src="bilder/338937-1.2.0.1.jpg" alt="">
+<div class="mtext"><h3>John Deere Series 9000</h3>
 <p class="meta">Forage Harvesting - Harvesters · von SL_Modding</p><p class="neu">Version 1.2.0.1 · Seitenklappen sind beim Öffnen jetzt sichtbar, kleinere Fehler behoben.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=345970&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00345970/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Jacto Uniport 4530</h3>
+<img src="bilder/345970-1.0.0.2.jpg" alt="">
+<div class="mtext"><h3>Jacto Uniport 4530</h3>
 <p class="meta">Yield Improvements - Sprayers · von Jacto and Connect Modding LTDA</p><p class="neu">Version 1.0.0.2 · Problem mit dem Precision-Farming-DLC behoben.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=372130&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00372130/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Hofman ORTO RR55</h3>
+<img src="bilder/372130-1.0.0.1.jpg" alt="">
+<div class="mtext"><h3>Hofman ORTO RR55</h3>
 <p class="meta">Forestry - Winches · von WOLFex Modding</p><p class="neu">Version 1.0.0.1 · Seildarstellung der Winde repariert.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=351118&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00351118/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Albutt Silage Bucket</h3>
+<img src="bilder/351118-1.2.0.0.jpg" alt="">
+<div class="mtext"><h3>Albutt Silage Bucket</h3>
 <p class="meta">Loaders - Wheel Loader Tools · von Adub Modding ABP Team</p><p class="neu">Version 1.2.0.0 · Französische Übersetzung und Kapazitäts-Konfigurationen ergänzt.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=369642&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00369642/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Vehicle Tab Sorting</h3>
+<img src="bilder/369642-1.3.0.0.jpg" alt="">
+<div class="mtext"><h3>Vehicle Tab Sorting</h3>
 <p class="meta">Gameplay · von Helfer B.</p><p class="neu">Version 1.3.0.0 · Sortierung zeigt nur noch fahrbare Fahrzeuge, neue Knöpfe zum Nach-oben/Nach-unten-Schieben und Speicherfehler auf Dedicated Servern behoben.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=361940&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00361940/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Easy Logging</h3>
+<img src="bilder/361940-1.0.2.0.jpg" alt="">
+<div class="mtext"><h3>Easy Logging</h3>
 <p class="meta">Gameplay · von Plutogaming91</p><p class="neu">Version 1.0.2.0 · Einstellungen ins normale Spielmenü verschoben, Anzeige und Umschaltung der Schnittlänge auf F1 ergänzt, automatisches Entasten schneller.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=369692&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00369692/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Configurable Sales</h3>
+<img src="bilder/369692-1.0.1.0.jpg" alt="">
+<div class="mtext"><h3>Configurable Sales</h3>
 <p class="meta">Gameplay · von JulLeBarge</p><p class="neu">Version 1.0.1.0 · Einstellungen werden jetzt im Spielstand gespeichert und bleiben nach dem Neuladen erhalten.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=342332&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00342332/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Advanced Silage Types</h3>
+<img src="bilder/342332-1.4.0.0.jpg" alt="">
+<div class="mtext"><h3>Advanced Silage Types</h3>
 <p class="meta">Gameplay · von ModdingAssociation - Tidde</p><p class="neu">Version 1.4.0.0 · Bunkersilo-Logik überarbeitet, die Pumps-and-Hoses-Biogasanlage wird unterstützt.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=303569&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00303569/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Super Strength</h3>
+<img src="bilder/303569-1.1.0.2.jpg" alt="">
+<div class="mtext"><h3>Super Strength</h3>
 <p class="meta">Gameplay · von AgrarKadabra</p><p class="neu">Version 1.1.0.2 · Konflikt mit Easy Development Controls behoben, der Super-Kraft auf Dedicated Servern für alle Spieler aktivieren konnte; spanische Übersetzung ergänzt.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=370142&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00370142/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Production Advisor</h3>
+<img src="bilder/370142-1.0.0.1.jpg" alt="">
+<div class="mtext"><h3>Production Advisor</h3>
 <p class="meta">Gameplay · von NYKK3</p><p class="neu">Version 1.0.0.1 · Suchfelder für Produkte und Ackerflächen ergänzt, Anzeige für Ultrawide-Monitore angepasst, Ladezeiten der Aufgabenliste optimiert.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=347991&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00347991/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Variable Tire Pressure</h3>
+<img src="bilder/347991-1.0.0.13.jpg" alt="">
+<div class="mtext"><h3>Variable Tire Pressure</h3>
 <p class="meta">Gameplay · von HotShotPepper</p><p class="neu">Version 1.0.0.13 · Fahrzeuge aus Mods ohne XML-Eintrag werden erkannt, gespeicherte Druckwerte werden beim Servereintritt richtig geladen, HUD verschiebbar und skalierbar.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=360381&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00360381/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Tip Side HUD</h3>
+<img src="bilder/360381-1.0.0.2.jpg" alt="">
+<div class="mtext"><h3>Tip Side HUD</h3>
 <p class="meta">Gameplay · von EWW_Bobo</p><p class="neu">Version 1.0.0.2 · Kompatibilität mit dem TestRunner verbessert; die Anzeige verschwindet jetzt zusammen mit dem Standard-HUD.</p></div></a><a class="mod" href="https://www.farming-simulator.com/mod.php?mod_id=303707&amp;title=fs2025" target="_blank" rel="noopener">
-<img src="https://cdn40.giants-software.com/modHub/storage/00303707/iconBig.jpg" alt="" width="112" height="112">
-<div><h3>Park Vehicle</h3>
+<img src="bilder/303707-1.1.1.0.jpg" alt="">
+<div class="mtext"><h3>Park Vehicle</h3>
 <p class="meta">Gameplay · von VertexDezign</p><p class="neu">Version 1.1.1.0 · Geparkte Fahrzeuge lassen sich per Strg+Umschalt+Tab durchschalten, das Park-Symbol ist verschiebbar, und der Parkstatus hängt an der Spieler-ID statt am Namen.</p></div></a></div></section>
 
 <script>addEventListener("beforeprint",()=>document.querySelectorAll("details").forEach(d=>d.open=true))</script>
