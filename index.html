@@ -38,7 +38,7 @@ details{margin-top:40px;border-top:1px solid var(--rand);padding-top:12px}
 details>summary{cursor:pointer;font-weight:600;font-size:18px}
 details details{margin-top:12px}
 details details>summary{font-size:16px}
-@media print{body{print-color-adjust:exact;-webkit-print-color-adjust:exact}details::details-content{content-visibility:visible;display:block}.news,.mod{break-inside:avoid}}
+@media print{*{print-color-adjust:exact!important;-webkit-print-color-adjust:exact!important}@page{margin:0}main{padding:12mm 10mm}details{display:none}.news,.mod,.haken{break-inside:avoid}}
 </style></head><body><main>
 <header><h1>Morgen-Briefing</h1><p>Montag, 28.09.2026 · erstellt 07:44 · nur Neues seit der letzten Ausgabe</p></header>
 <section class="haken"><h2>Stream-Aufhänger</h2><ul><li>Massey Ferguson bringt in Beauvais einen rosa Traktor: Welche Maschine im Spiel würdet ihr auch mal in Rosa sehen wollen?</li><li>Bei GIANTS gibt es eine Vorschau auf Kaffeeanbau in Beans &amp; Alpacas: Würdet ihr für eine neue Kultur eine eigene Map anfangen?</li><li>Den Stihl-Akku-Fällkeil gibt es jetzt echt: Wer von euch macht im Spiel Forstwirtschaft, und was fehlt euch da noch?</li></ul></section>
@@ -169,5 +169,4 @@ details details>summary{font-size:16px}
 <div class="mtext"><h3>Park Vehicle</h3>
 <p class="meta">Gameplay · von VertexDezign</p><p class="neu">Version 1.1.1.0 · Geparkte Fahrzeuge lassen sich per Strg+Umschalt+Tab durchschalten, das Park-Symbol ist verschiebbar, und der Parkstatus hängt an der Spieler-ID statt am Namen.</p></div></a></div></section>
 
-<script>addEventListener("beforeprint",()=>document.querySelectorAll("details").forEach(d=>d.open=true))</script>
 </main></body></html>
